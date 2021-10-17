@@ -19,7 +19,7 @@
             });
             var labels = table.column(0).data().toArray();
             var data = table.column(1).data().toArray();
-            const areaChartData = {
+            const areaChartData2 = {
                 labels: labels,
                 datasets: [{
                     label: 'Stocks',
@@ -56,7 +56,7 @@
             //- BAR CHART -
             //-------------
             var barChartCanvas = $('#barChart').get(0).getContext('2d')
-            var barChartData = $.extend(true, {}, areaChartData)
+            var barChartData = $.extend(true, {}, areaChartData2)
 
 
             var barChartOptions = {
@@ -94,7 +94,7 @@
             var xl7 = table.column(12).data().toArray();
 
 
-            var areaChartData = {
+            var areaChartData2 = {
                 labels: month,
 
                 datasets: [
@@ -258,9 +258,9 @@
             //- BAR CHART -
             //-------------
 
-            var barChartData = $.extend(true, {}, areaChartData)
-            var temp0 = areaChartData.datasets[0]
-            var temp1 = areaChartData.datasets[1]
+            var barChartData = $.extend(true, {}, areaChartData2)
+            var temp0 = areaChartData2.datasets[0]
+            var temp1 = areaChartData2.datasets[1]
             barChartData.datasets[0] = temp1
             barChartData.datasets[1] = temp0
 
